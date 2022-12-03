@@ -8,6 +8,8 @@ set.clipboard = "unnamedplus"
 set.number = true
 set.relativenumber = true
 set.showmatch = true
+set.termguicolors = true
+set.showmode = false
 
 -- Tabs/Indentation
 set.expandtab = true

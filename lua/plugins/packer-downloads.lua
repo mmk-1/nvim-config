@@ -19,7 +19,7 @@ end
 vim.cmd [[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+    autocmd BufWritePost packer-downloads.lua source <afile> | PackerSync
   augroup end
 ]]
 
@@ -39,12 +39,16 @@ return packer.startup(function(use)
     use { "nvim-treesitter/nvim-treesitter", commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac" }
     use { "akinsho/toggleterm.nvim", commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda" }
     use { 'lewis6991/impatient.nvim' }
+    use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
+    use { 'christoomey/vim-tmux-navigator' }
+
 
     -- Comment with gcc
     -- use { "numToStr/Comment.nvim", commit = "97a188a98b5a3a6f9b1b850799ac078faa17ab67" }
 
     -- Colorscheme
-    use { "NLKNguyen/papercolor-theme" }
+    use { "rebelot/kanagawa.nvim" }
+    use { "sainnhe/everforest" }
 
     -- Snippet related plugins
     use { "L3MON4D3/LuaSnip", commit = "8f8d493e7836f2697df878ef9c128337cbf2bb84" } --snippet engine
