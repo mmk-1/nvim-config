@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/mmk/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["impatient.nvim"] = {
+    loaded = true,
+    path = "/home/mmk/.local/share/nvim/site/pack/packer/start/impatient.nvim",
+    url = "https://github.com/lewis6991/impatient.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/home/mmk/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",

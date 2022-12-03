@@ -1,7 +1,7 @@
 local servers = {
 	"sumneko_lua",
-	"pyright",
-    "clangd",
+	"clangd",
+    "pyright"
 }
 
 local settings = {

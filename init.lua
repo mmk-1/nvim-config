@@ -6,11 +6,7 @@ vim.g.loaded_netrwPlugin = 1
 require "core.options"
 require "core.keymaps"
 require "lsp"
-require "plugins.nvim-tree"
-require "plugins.treesitter"
-require "plugins.plugins"
-require "plugins.toggleterm"
-require "plugins.cmp"
+require "plugins"
 
 -- Set colorscheme
 local colorscheme = "PaperColor"

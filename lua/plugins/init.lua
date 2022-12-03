@@ -1,0 +1,6 @@
+require "nvim-tree"
+require "treesitter"
+require "packer-downloads"
+require "toggleterm"
+require "cmp"
+require "impatient"
