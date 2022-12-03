@@ -40,11 +40,10 @@ return packer.startup(function(use)
     use { "akinsho/toggleterm.nvim", commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda" }
     use { 'lewis6991/impatient.nvim' }
     use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
+
+    -- Tmux
     use { 'christoomey/vim-tmux-navigator' }
-
-
-    -- Comment with gcc
-    -- use { "numToStr/Comment.nvim", commit = "97a188a98b5a3a6f9b1b850799ac078faa17ab67" }
+    use { 'tpope/vim-obsession' }
 
     -- Colorscheme
     use { "rebelot/kanagawa.nvim" }
