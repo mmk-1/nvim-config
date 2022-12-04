@@ -1,7 +1,6 @@
+require "plugins.packer-downloads"
 require "plugins.nvim-tree"
 require "plugins.treesitter"
-require "plugins.packer-downloads"
 require "plugins.toggleterm"
 require "plugins.cmp"
-require "plugins.impatient"
 require "plugins.lualine"

@@ -31,15 +31,16 @@ end
 
 return packer.startup(function(use)
 
-    use { "wbthomason/packer.nvim", commit = "6afb67460283f0e990d35d229fd38fdc04063e0a" } -- Have packer manage itself
+    use { "wbthomason/packer.nvim" } -- Have packer manage itself
     use { "nvim-lua/plenary.nvim" }
-    -- use { "nvim-lua/plenary.nvim", commit = "4b7e52044bbb84242158d977a50c4cbcd85070c7" }
     use { "nvim-telescope/telescope.nvim", tag = '0.1.0' }
     use { 'nvim-tree/nvim-tree.lua', requires = { 'nvim-tree/nvim-web-devicons', commit = "563f3635c2d8a7be7933b9e547f7c178ba0d4352"} }
     use { "nvim-treesitter/nvim-treesitter" }
     use { "akinsho/toggleterm.nvim", commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda" }
     use { 'lewis6991/impatient.nvim' }
     use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
+    -- use { 'dstein64/vim-startuptime' }
+
 
     -- Tmux
     use { 'christoomey/vim-tmux-navigator' }
@@ -63,8 +64,8 @@ return packer.startup(function(use)
 
     -- LSP stuff
     use { "neovim/nvim-lspconfig", commit = "f11fdff7e8b5b415e5ef1837bdcdd37ea6764dda" } -- enable LSP
-    use { "williamboman/mason.nvim", commit = "c2002d7a6b5a72ba02388548cfaf420b864fbc12"}
-    use { "williamboman/mason-lspconfig.nvim", commit = "0051870dd728f4988110a1b2d47f4a4510213e31" }
+    use { "williamboman/mason.nvim", commit = "bfc5997e52fe9e20642704da050c415ea1d4775f"}
+    use { "williamboman/mason-lspconfig.nvim", commit = "0eb7cfefbd3a87308c1875c05c3f3abac22d367c" }
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()
