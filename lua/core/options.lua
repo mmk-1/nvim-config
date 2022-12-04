@@ -3,6 +3,7 @@ local set = vim.opt
 set.swapfile = false
 set.mouse = "a"
 set.clipboard = "unnamedplus"
+set.backup = false
 
 -- UI
 set.number = true
@@ -10,6 +11,7 @@ set.relativenumber = true
 set.showmatch = true
 set.termguicolors = true
 set.showmode = false
+set.showtabline = 0
 
 -- Tabs/Indentation
 set.expandtab = true
