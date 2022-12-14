@@ -20,3 +20,16 @@ keymap('n', '<leader>fh', builtin.help_tags, {})
 
 -- NvimTree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+
+-- Vim Tmux Navigator
+-- vim.g.tmux_navigator_no_mappings = 1
+
+-- keymap("n", "<C-h>", "<C-U>TmuxNavigateLeft<cr>", opts)
+-- keymap("n", "<C-j>", "<C-U>TmuxNavigateDown<cr>", opts)
+-- keymap("n", "<C-k>", "<C-U>TmuxNavigateUp<cr>", opts)
+-- keymap("n", "<C-l>", "<C-U>TmuxNavigateRight<cr>", opts)
+-- noremap <silent> {Left-Mapping} :<C-U>TmuxNavigateLeft<cr>
+-- noremap <silent> {Down-Mapping} :<C-U>TmuxNavigateDown<cr>
+-- noremap <silent> {Up-Mapping} :<C-U>TmuxNavigateUp<cr>
+-- noremap <silent> {Right-Mapping} :<C-U>TmuxNavigateRight<cr>
+-- noremap <silent> {Previous-Mapping} :<C-U>TmuxNavigatePrevious<cr>

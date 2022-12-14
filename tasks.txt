@@ -1,0 +1,2 @@
+tmux navigator problem awith tog term
+Supertab -> cmp
