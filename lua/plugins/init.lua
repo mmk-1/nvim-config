@@ -1,4 +1,5 @@
 require "plugins.packer-downloads"
+require "plugins.tmux-navigator"
 require "plugins.nvim-tree"
 require "plugins.treesitter"
 require "plugins.toggleterm"

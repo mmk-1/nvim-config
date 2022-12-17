@@ -43,7 +43,7 @@ return packer.startup(function(use)
 
 
     -- Tmux
-    use { 'christoomey/vim-tmux-navigator' }
+    use { 'alexghergh/nvim-tmux-navigation' }
     use { 'tpope/vim-obsession' }
 
     -- Colorscheme
