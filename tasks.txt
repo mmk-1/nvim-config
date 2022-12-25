@@ -1,2 +1,1 @@
-Supertab -> cmp
 more keymapping from primeagan
