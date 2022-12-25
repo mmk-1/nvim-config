@@ -2,7 +2,6 @@ local status_ok, nvim_tmux_nav = pcall(require, "nvim-tmux-navigation")
 if not status_ok then
 	return
 end
-
 vim.keymap.set('n', "<C-h>", nvim_tmux_nav.NvimTmuxNavigateLeft)
 vim.keymap.set('n', "<C-j>", nvim_tmux_nav.NvimTmuxNavigateDown)
 vim.keymap.set('n', "<C-k>", nvim_tmux_nav.NvimTmuxNavigateUp)

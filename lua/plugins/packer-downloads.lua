@@ -39,8 +39,8 @@ return packer.startup(function(use)
     use { "akinsho/toggleterm.nvim", commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda" }
     use { 'lewis6991/impatient.nvim' }
     use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
+    -- use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
     -- use { 'dstein64/vim-startuptime' }
-
 
     -- Tmux
     use { 'alexghergh/nvim-tmux-navigation' }
