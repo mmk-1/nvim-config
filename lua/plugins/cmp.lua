@@ -50,9 +50,9 @@ cmp.setup({
 		end,
 	},
 
-    completion = {
-        autocomplete = false
-    },
+    -- completion = {
+    --     autocomplete = true
+    -- },
 
 	mapping = cmp.mapping.preset.insert({
 		["<C-p>"] = cmp.mapping.select_prev_item(),
