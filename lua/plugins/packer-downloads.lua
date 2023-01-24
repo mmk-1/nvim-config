@@ -47,8 +47,9 @@ return packer.startup(function(use)
     use { 'tpope/vim-obsession' }
 
     -- Colorscheme
-    use { "rebelot/kanagawa.nvim" }
-    use { "sainnhe/everforest" }
+    -- use { "rebelot/kanagawa.nvim" }
+    -- use { "sainnhe/everforest" }
+    use { "catppuccin/nvim", as = "catppuccin" }
 
     -- Snippet related plugins
     use { "L3MON4D3/LuaSnip", commit = "8f8d493e7836f2697df878ef9c128337cbf2bb84" } --snippet engine

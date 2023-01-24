@@ -25,7 +25,7 @@ keymap("n", "<C-d>", "<C-d>zz")
 keymap("n", "<C-u>", "<C-u>zz")
 
 -- Best remap, preserves the highlighted & yanked text in register
-keymap("x", "<leader>p", "\"_dP")
+keymap("x", "p", "\"_dP")
 
 -- Search and replace word under cursor
 keymap("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
