@@ -27,8 +27,8 @@ return lazy.setup({
     { 'nvim-tree/nvim-tree.lua', dependencies = { 'nvim-tree/nvim-web-devicons', commit = "563f3635c2d8a7be7933b9e547f7c178ba0d4352"} },
     { "nvim-treesitter/nvim-treesitter" },
     { "akinsho/toggleterm.nvim", commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda" },
-    { 'lewis6991/impatient.nvim' },
-    { 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons', commit = "563f3635c2d8a7be7933b9e547f7c178ba0d4352", lazy = true } },
+    { "nvim-lualine/lualine.nvim", dependencies = { 'nvim-tree/nvim-web-devicons', commit = "563f3635c2d8a7be7933b9e547f7c178ba0d4352", lazy = true } },
+    -- { "nvim-telescope/telescope-file-browser.nvim" },
 
     -- Tmux
     { 'alexghergh/nvim-tmux-navigation' },
