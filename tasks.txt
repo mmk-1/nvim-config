@@ -1,6 +1,4 @@
 telescope open file in prev dir
-autocomplete on
-
 
 undotree
 tabs and tabline vs buffers

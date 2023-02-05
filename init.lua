@@ -1,7 +1,9 @@
 -- require 
-require 'impatient' -- Apparently impatient works if its at the top of plugins
+vim.g.mapleader = ' '
+require "plugins"
 require "core.options"
 require "core.keymaps"
+require "core.autocmds"
 require "lsp"
 require "plugins"
 
