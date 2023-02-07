@@ -17,8 +17,8 @@ set.completeopt = { "menuone", "noselect" }
 
 -- Tabs/Indentation
 set.expandtab = true
-set.shiftwidth = 4
-set.tabstop = 4
+set.shiftwidth = 2
+set.tabstop = 2
 set.smartindent = true
 
 -- Wrapping

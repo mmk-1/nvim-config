@@ -19,16 +19,18 @@ end
 
 return lazy.setup({
     -- Colorscheme
+    { "catppuccin/nvim", name = "catppuccin" },
     -- { "rebelot/kanagawa.nvim" }
     -- { "sainnhe/everforest" }
-    { "catppuccin/nvim", name = "catppuccin" },
+    --
+    -- Utilities
     { "nvim-lua/plenary.nvim" },
     { "nvim-telescope/telescope.nvim", version = '0.1.0' },
     { 'nvim-tree/nvim-tree.lua', dependencies = { 'nvim-tree/nvim-web-devicons', commit = "563f3635c2d8a7be7933b9e547f7c178ba0d4352"} },
     { "nvim-treesitter/nvim-treesitter" },
     { "akinsho/toggleterm.nvim", commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda" },
     { "nvim-lualine/lualine.nvim", dependencies = { 'nvim-tree/nvim-web-devicons', commit = "563f3635c2d8a7be7933b9e547f7c178ba0d4352", lazy = true } },
-    -- { "nvim-telescope/telescope-file-browser.nvim" },
+    { "windwp/nvim-autopairs" },
 
     -- Tmux
     { 'alexghergh/nvim-tmux-navigation' },
@@ -50,7 +52,8 @@ return lazy.setup({
     -- LSP stuff
     { "neovim/nvim-lspconfig", commit = "f11fdff7e8b5b415e5ef1837bdcdd37ea6764dda" }, -- enable LSP
     { "williamboman/mason.nvim", commit = "bfc5997e52fe9e20642704da050c415ea1d4775f"},
-    { "williamboman/mason-lspconfig.nvim", commit = "0eb7cfefbd3a87308c1875c05c3f3abac22d367c" }
+    { "williamboman/mason-lspconfig.nvim", commit = "0eb7cfefbd3a87308c1875c05c3f3abac22d367c" },
+    { "jose-elias-alvarez/null-ls.nvim" }, -- linter/formatter
 
 })
 
