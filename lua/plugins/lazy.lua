@@ -22,7 +22,8 @@ return lazy.setup({
     { "catppuccin/nvim", name = "catppuccin" },
     -- { "rebelot/kanagawa.nvim" }
     -- { "sainnhe/everforest" }
-    --
+    { "ellisonleao/gruvbox.nvim" },
+
     -- Utilities
     { "nvim-lua/plenary.nvim" },
     { "nvim-telescope/telescope.nvim", version = '0.1.0' },

@@ -10,7 +10,6 @@ M.capabilities = cmp_nvim_lsp.update_capabilities(M.capabilities)
 
 M.setup = function()
 	local signs = {
-
 		{ name = "DiagnosticSignError", text = "" },
 		{ name = "DiagnosticSignWarn", text = "" },
 		{ name = "DiagnosticSignHint", text = "" },
@@ -22,7 +21,7 @@ M.setup = function()
 	end
 
 	local config = {
-		virtual_text = false, -- disable virtual text
+		virtual_text = true, -- disable virtual text
 		signs = {
 			active = signs, -- show signs
 		},
@@ -65,14 +64,18 @@ local function lsp_keymaps(bufnr)
 	keymap(bufnr, "n", "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
 	keymap(bufnr, "n", "<leader>lj", "<cmd>lua vim.diagnostic.goto_next({buffer=0})<cr>", opts)
 	keymap(bufnr, "n", "<leader>lk", "<cmd>lua vim.diagnostic.goto_prev({buffer=0})<cr>", opts)
-    -- Essentially we don't need this since we have a keymap setup in keymaps for vim's built in s&r
+	-- Essentially we don't need this since we have a keymap setup in keymaps.lua for vim's built in search & replace
 	-- keymap(bufnr, "n", "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
 	keymap(bufnr, "n", "<leader>ls", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
 	keymap(bufnr, "n", "<leader>lq", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
 end
 
 M.on_attach = function(client, bufnr)
+  -- Handled by null-ls
 	if client.name == "sumneko_lua" then
+		client.server_capabilities.documentFormattingProvider = false
+	end
+	if client.name == "rust_analyzer" then
 		client.server_capabilities.documentFormattingProvider = false
 	end
 

@@ -13,12 +13,14 @@ set.showmatch = true
 set.termguicolors = true
 set.showmode = false
 set.showtabline = 0
+set.cursorline = true
 set.completeopt = { "menuone", "noselect" }
 
 -- Tabs/Indentation
-set.expandtab = true
-set.shiftwidth = 2
 set.tabstop = 2
+set.softtabstop = 2
+set.shiftwidth = 2
+set.expandtab = true -- For whatever reason this doesn't work when you
 set.smartindent = true
 
 -- Wrapping
@@ -62,3 +64,4 @@ local disabled_built_ins = {
 for _, plugin in pairs(disabled_built_ins) do
    vim.g["loaded_" .. plugin] = 1
 end
+
