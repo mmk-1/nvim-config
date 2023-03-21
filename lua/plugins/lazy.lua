@@ -41,9 +41,10 @@ return lazy.setup({
 			lazy = true,
 		},
 	},
+	{ "jiangmiao/auto-pairs" },
 
 	-- Tmux
-	{ 'alexghergh/nvim-tmux-navigation' },
+	{ "alexghergh/nvim-tmux-navigation" },
 	{ "tpope/vim-obsession" },
 
 	-- Snippet related plugins
