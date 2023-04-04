@@ -120,6 +120,6 @@ cmp.setup({
 		documentation = cmp.config.window.bordered(),
 	},
 	experimental = {
-		ghost_text = false,
+		ghost_text = true, -- Don't confuse with virtual_text in handlers.lua!
 	},
 })
