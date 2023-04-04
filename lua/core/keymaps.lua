@@ -40,7 +40,7 @@ keymap('n', '<leader>fh', builtin.help_tags, {})
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- (N)Vim Tmux Navigator
--- Must be here to overwrite Lazy 
+-- Must be here to overwrite Lazy -> keymaps.lua is after lazy in ROOT/init.lua
 -- https://github.com/LazyVim/LazyVim/discussions/277
 local status_ok, nvim_tmux_nav = pcall(require, "nvim-tmux-navigation")
 if not status_ok then
