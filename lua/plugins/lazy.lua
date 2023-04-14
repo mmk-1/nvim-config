@@ -22,16 +22,17 @@ return lazy.setup({
 	{ "catppuccin/nvim", name = "catppuccin" },
 	-- { "rebelot/kanagawa.nvim" }
 	-- { "sainnhe/everforest" }
-	{ "ellisonleao/gruvbox.nvim" },
+	-- { "ellisonleao/gruvbox.nvim" },
 
 	-- Utilities
-	{ "nvim-lua/plenary.nvim" },
+	{ "nvim-lua/plenary.nvim", commit = "253d34830709d690f013daf2853a9d21ad7accab" },
 	{ "nvim-telescope/telescope.nvim", version = "0.1.0" },
 	{
 		"nvim-tree/nvim-tree.lua",
+		commit = "bbb6d4891009de7dab05ad8fc2d39f272d7a751c",
 		dependencies = { "nvim-tree/nvim-web-devicons", commit = "563f3635c2d8a7be7933b9e547f7c178ba0d4352" },
 	},
-	{ "nvim-treesitter/nvim-treesitter" },
+	{ "nvim-treesitter/nvim-treesitter", commit = "350e7e5e31a5265fbccdf96b00a413c32583c2cc" },
 	{ "akinsho/toggleterm.nvim", commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda" },
 	{
 		"nvim-lualine/lualine.nvim",
@@ -42,10 +43,10 @@ return lazy.setup({
 		},
 	},
 	{ "jiangmiao/auto-pairs" },
-	{ "numToStr/Comment.nvim" },
-	{ "mbbill/undotree" },
-  { "ggandor/leap.nvim", dependencies = "tpope/vim-repeat" },
-  { "ggandor/leap-spooky.nvim", commit = "79a7a3f28897d99e5da970e7121ac8ff738e1554"},
+	{ "numToStr/Comment.nvim", commit = "a89339ffbee677ab0521a483b6dac7e2e67c907e" },
+	{ "mbbill/undotree", commit = "485f01efde4e22cb1ce547b9e8c9238f36566f21" },
+	{ "ggandor/leap.nvim", dependencies = "tpope/vim-repeat", commit = "98a72ad93c629c49bd7127d342960cc1b159b620" },
+	{ "ggandor/leap-spooky.nvim", commit = "79a7a3f28897d99e5da970e7121ac8ff738e1554" },
 
 	-- Tmux
 	{ "alexghergh/nvim-tmux-navigation" },
@@ -67,5 +68,5 @@ return lazy.setup({
 	{ "neovim/nvim-lspconfig", commit = "f11fdff7e8b5b415e5ef1837bdcdd37ea6764dda" }, -- enable LSP
 	{ "williamboman/mason.nvim", commit = "bfc5997e52fe9e20642704da050c415ea1d4775f" },
 	{ "williamboman/mason-lspconfig.nvim", commit = "0eb7cfefbd3a87308c1875c05c3f3abac22d367c" },
-	{ "jose-elias-alvarez/null-ls.nvim" }, -- linter/formatter
+	{ "jose-elias-alvarez/null-ls.nvim", commit = "e172e1e3011e3d032dbeba6414644ba968570828" }, -- linter/formatter
 })
