@@ -11,6 +11,7 @@
   "friendly-snippets": { "branch": "main", "commit": "2be79d8a9b03d4175ba6b3d14b082680de1b31b1" },
   "gruvbox.nvim": { "branch": "main", "commit": "331507561a46d6ce484f576299e0297e277bac7f" },
   "lazy.nvim": { "branch": "main", "commit": "5b4444f0d7e556deba3f7ca949a2ba0e2c3369fb" },
+  "leap-spooky.nvim": { "branch": "main", "commit": "79a7a3f28897d99e5da970e7121ac8ff738e1554" },
   "leap.nvim": { "branch": "main", "commit": "98a72ad93c629c49bd7127d342960cc1b159b620" },
   "lualine.nvim": { "branch": "master", "commit": "e99d733e0213ceb8f548ae6551b04ae32e590c80" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "0eb7cfefbd3a87308c1875c05c3f3abac22d367c" },

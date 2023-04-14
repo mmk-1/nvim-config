@@ -45,6 +45,7 @@ return lazy.setup({
 	{ "numToStr/Comment.nvim" },
 	{ "mbbill/undotree" },
   { "ggandor/leap.nvim", dependencies = "tpope/vim-repeat" },
+  { "ggandor/leap-spooky.nvim", commit = "79a7a3f28897d99e5da970e7121ac8ff738e1554"},
 
 	-- Tmux
 	{ "alexghergh/nvim-tmux-navigation" },
