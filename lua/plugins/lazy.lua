@@ -42,6 +42,9 @@ return lazy.setup({
 		},
 	},
 	{ "jiangmiao/auto-pairs" },
+	{ "numToStr/Comment.nvim" },
+	{ "mbbill/undotree" },
+  { "ggandor/leap.nvim", dependencies = "tpope/vim-repeat" },
 
 	-- Tmux
 	{ "alexghergh/nvim-tmux-navigation" },
