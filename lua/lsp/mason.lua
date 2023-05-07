@@ -4,6 +4,7 @@ local servers = {
   "pyright",
   "rust_analyzer",
   "hls",
+  "bashls",
 }
 
 local settings = {

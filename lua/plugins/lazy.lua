@@ -20,7 +20,7 @@ end
 return lazy.setup({
 	-- Colorscheme
 	{ "catppuccin/nvim", name = "catppuccin" },
-	-- { "rebelot/kanagawa.nvim" }
+  { "rebelot/kanagawa.nvim" },
 	-- { "sainnhe/everforest" }
 	-- { "ellisonleao/gruvbox.nvim" },
 
@@ -69,4 +69,5 @@ return lazy.setup({
 	{ "williamboman/mason.nvim", commit = "bfc5997e52fe9e20642704da050c415ea1d4775f" },
 	{ "williamboman/mason-lspconfig.nvim", commit = "0eb7cfefbd3a87308c1875c05c3f3abac22d367c" },
 	{ "jose-elias-alvarez/null-ls.nvim", commit = "e172e1e3011e3d032dbeba6414644ba968570828" }, -- linter/formatter
+	{ "github/copilot.vim" }, -- Copilot
 })

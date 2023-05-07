@@ -123,3 +123,4 @@ cmp.setup({
 		ghost_text = true, -- Don't confuse with virtual_text in handlers.lua!
 	},
 })
+
