@@ -3,7 +3,6 @@ local servers = {
 	"clangd",
   "pyright",
   "rust_analyzer",
-  "hls",
   "bashls",
 }
 
