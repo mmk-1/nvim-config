@@ -49,9 +49,9 @@ cmp.setup({
 			luasnip.lsp_expand(args.body) -- For `luasnip` users.
 		end,
 	},
-	-- completion = {
-	--     autocomplete = true,
-	-- },
+	completion = {
+	    autocomplete = false,
+	},
 	mapping = cmp.mapping.preset.insert({
 		-- ["<C-p>"] = cmp.mapping.select_prev_item(),
 		-- ["<C-n>"] = cmp.mapping.select_next_item(),

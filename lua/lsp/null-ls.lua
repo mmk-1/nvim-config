@@ -9,8 +9,8 @@ local formatting = null_ls.builtins.formatting
 null_ls.setup {
   debug = false,
   sources = {
-    formatting.stylua,
-    formatting.rustfmt,
-    formatting.clang_format,
+    -- formatting.stylua,
+    -- formatting.rustfmt,
+    -- formatting.clang_format,
   },
 }
