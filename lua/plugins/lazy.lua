@@ -46,7 +46,9 @@ return lazy.setup({
 	{ "numToStr/Comment.nvim", commit = "a89339ffbee677ab0521a483b6dac7e2e67c907e" },
 	{ "mbbill/undotree", commit = "485f01efde4e22cb1ce547b9e8c9238f36566f21" },
 	{ "ggandor/leap.nvim", dependencies = "tpope/vim-repeat", commit = "98a72ad93c629c49bd7127d342960cc1b159b620" },
-	{ "ggandor/leap-spooky.nvim", commit = "79a7a3f28897d99e5da970e7121ac8ff738e1554" },
+	-- { "ggandor/leap-spooky.nvim", commit = "79a7a3f28897d99e5da970e7121ac8ff738e1554" },
+  { "lewis6991/gitsigns.nvim" },
+
 
 	-- Tmux
 	{ "alexghergh/nvim-tmux-navigation" },
