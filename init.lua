@@ -12,7 +12,7 @@ local colorscheme = "onedark"
 
 -- For onedark theme we must select the style like this :/
 require('onedark').setup {
-    style = 'deep'
+  style = 'deep'
 }
 require('onedark').load()
 
