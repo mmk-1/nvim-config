@@ -20,8 +20,9 @@ end
 return lazy.setup({
 	-- Colorscheme
   { "catppuccin/nvim", name = "catppuccin" },
-  { "rebelot/kanagawa.nvim" },
-  { 'rose-pine/neovim', name = 'rose-pine' },
+  { "navarasu/onedark.nvim" },
+  -- { "rebelot/kanagawa.nvim" },
+  -- { "rose-pine/neovim", name = "rose-pine" },
   -- { "sainnhe/everforest" }
 	-- { "ellisonleao/gruvbox.nvim" },
 
@@ -56,16 +57,16 @@ return lazy.setup({
 	{ "tpope/vim-obsession" },
 
 	-- Snippet related plugins
-	-- { "L3MON4D3/LuaSnip", commit = "8f8d493e7836f2697df878ef9c128337cbf2bb84" }, --snippet engine
+	{ "L3MON4D3/LuaSnip", commit = "8f8d493e7836f2697df878ef9c128337cbf2bb84" }, --snippet engine
 	-- { "rafamadriz/friendly-snippets", commit = "2be79d8a9b03d4175ba6b3d14b082680de1b31b1" }, -- a bunch of snippets to use
 
 	-- cmp plugins
 	{ "hrsh7th/nvim-cmp"}, -- The completion plugin
 	{ "hrsh7th/cmp-nvim-lsp"},
-	-- { "hrsh7th/cmp-buffer"}, -- buffer completions
-	-- { "hrsh7th/cmp-path"}, -- path completions
-	-- { "saadparwaiz1/cmp_luasnip"}, -- snippet completions
-	-- { "hrsh7th/cmp-nvim-lua"},
+	{ "hrsh7th/cmp-buffer"}, -- buffer completions
+	{ "hrsh7th/cmp-path"}, -- path completions
+	{ "saadparwaiz1/cmp_luasnip"}, -- snippet completions
+	{ "hrsh7th/cmp-nvim-lua"},
 
 	-- LSP stuff
 	{ "neovim/nvim-lspconfig", commit = "0d29cad8de3b2c654315203fc1fe12fde722a18a" }, -- enable LSP

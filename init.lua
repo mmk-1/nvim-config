@@ -1,4 +1,4 @@
--- require 
+-- require
 vim.g.mapleader = ' '
 require "plugins"
 require "core.options"
@@ -8,10 +8,15 @@ require "lsp"
 require "plugins"
 
 -- Set colorscheme
-local colorscheme = "rose-pine-main"
+local colorscheme = "onedark"
+
+-- For onedark theme we must select the style like this :/
+require('onedark').setup {
+    style = 'deep'
+}
+require('onedark').load()
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then
   return
 end
-

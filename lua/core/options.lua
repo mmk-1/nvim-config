@@ -59,6 +59,7 @@ local disabled_built_ins = {
    "compiler",
    "bugreport",
    "ftplugin",
+   "terminal",
 }
 
 for _, plugin in pairs(disabled_built_ins) do
