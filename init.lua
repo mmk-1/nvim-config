@@ -8,7 +8,7 @@ require "lsp"
 require "plugins"
 
 -- Set colorscheme
-local colorscheme = "catppuccin"
+local colorscheme = "rose-pine-main"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then
