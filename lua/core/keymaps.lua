@@ -2,6 +2,9 @@
 local keymap = vim.keymap.set
 local opts = { silent = true }
 
+-- Disable highlight
+keymap("n", "<leader>hh", ":noh<CR>")
+
 -- Easier split navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
@@ -14,7 +17,6 @@ keymap("n", "<C-Down>", ":resize +2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
--- Awesome keymappings from theprimagen
 -- Move highlighted blocks 
 keymap("v", "J", ":m '>+1<CR>gv=gv")
 keymap("v", "K", ":m '<-2<CR>gv=gv")
@@ -23,7 +25,7 @@ keymap("v", "K", ":m '<-2<CR>gv=gv")
 keymap("n", "<C-d>", "<C-d>zz")
 keymap("n", "<C-u>", "<C-u>zz")
 
--- Best remap, preserves the highlighted & yanked text in register
+-- Preserves the highlighted & yanked text in register
 keymap("x", "p", "\"_dP")
 
 -- Search and replace word under cursor
