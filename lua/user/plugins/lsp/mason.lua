@@ -28,6 +28,7 @@ local settings = {
 function M.config()
   require("mason").setup(settings)
   require("mason-lspconfig").setup {
+    -- Servers are specified in lua/user/utils/init.lua
     ensure_installed = require("user.utils").servers,
     automatic_installation = true,
   }

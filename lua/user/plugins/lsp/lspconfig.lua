@@ -42,7 +42,7 @@ function M.config()
     lsp_keymaps(bufnr)
     require("illuminate").on_attach(client)
   end
-
+   -- Servers are specified in lua/user/utils/init.lua
   for _, server in pairs(require("user.utils").servers) do
     Opts = {
       on_attach = on_attach,
