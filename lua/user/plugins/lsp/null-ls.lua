@@ -1,6 +1,9 @@
 return {
   "jose-elias-alvarez/null-ls.nvim", -- configure formatters & linters
   event = { "BufReadPre", "BufNewFile" },
+  keys = {
+    { "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>" }
+  },
   config = function()
     -- import null-ls plugin
     local null_ls = require("null-ls")
@@ -45,6 +48,5 @@ return {
         end
       end,
     })
-    vim.keymap.set("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>")
   end,
 }
