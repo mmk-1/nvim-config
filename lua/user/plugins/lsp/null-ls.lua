@@ -45,5 +45,6 @@ return {
         end
       end,
     })
+    vim.keymap.set("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>")
   end,
 }

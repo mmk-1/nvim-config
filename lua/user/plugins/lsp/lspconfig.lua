@@ -3,16 +3,14 @@ return {
   lazy = false,
   event = { "BufReadPre" },
   dependencies = {
-    {
-      "hrsh7th/cmp-nvim-lsp",
-    },
+    { "hrsh7th/cmp-nvim-lsp" },
   },
   config = function()
     local cmp_nvim_lsp = require "cmp_nvim_lsp"
 
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     capabilities.textDocument.completion.completionItem.snippetSupport = true
-    capabilities = cmp_nvim_lsp.default_capabilities(M.capabilities)
+    capabilities = cmp_nvim_lsp.default_capabilities(capabilities)
 
     local function lsp_keymaps(bufnr)
       local opts = { noremap = true, silent = true }

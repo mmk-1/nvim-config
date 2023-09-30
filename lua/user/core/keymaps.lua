@@ -36,3 +36,7 @@ keymap("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
 
 -- clear search highlights
 keymap("n", "<leader>nh", ":nohl<CR>")
+
+
+
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)

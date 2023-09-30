@@ -1,4 +1,4 @@
-local M = {
+return {
     "RRethy/vim-illuminate",
     event = "VeryLazy",
     config = function()
