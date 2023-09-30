@@ -8,7 +8,7 @@ return {
     local null_ls_utils = require("null-ls.utils")
 
     -- for conciseness
-    local formatting = null_ls.builtins.formatting -- to setup formatters
+    local formatting = null_ls.builtins.formatting   -- to setup formatters
     local diagnostics = null_ls.builtins.diagnostics -- to setup linters
 
     -- to setup format on save

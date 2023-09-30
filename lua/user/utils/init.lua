@@ -4,7 +4,6 @@ local M = {}
 M.servers = {
   "lua_ls",
   "gopls",
-  "delve" -- Go debugger
 }
 
 return M
