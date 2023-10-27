@@ -3,7 +3,7 @@ local M = {
   cmd = "Mason",
   event = "BufReadPre",
   dependencies = {
-    { "williamboman/mason-lspconfig.nvim", },
+    { "williamboman/mason-lspconfig.nvim" },
     { "jayp0521/mason-null-ls.nvim" },
   },
 }
@@ -14,7 +14,7 @@ local settings = {
     icons = {
       package_installed = "✓",
       package_pending = "➜",
-      package_uninstalled = "✗"
+      package_uninstalled = "✗",
     },
   },
   log_level = vim.log.levels.INFO,
@@ -23,11 +23,11 @@ local settings = {
 
 function M.config()
   require("mason").setup(settings)
-  require("mason-lspconfig").setup {
+  require("mason-lspconfig").setup({
     -- Servers are specified in lua/user/utils/init.lua
     ensure_installed = require("user.utils").servers,
     automatic_installation = true,
-  }
+  })
   require("mason-null-ls").setup({
     -- list of formatters & linters for mason to install
     ensure_installed = {
@@ -35,6 +35,7 @@ function M.config()
       "gofumpt",
       "goimports-reviser",
       "golines",
+      "clang-format",
     },
     automatic_installation = true,
   })

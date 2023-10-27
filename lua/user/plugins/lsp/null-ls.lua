@@ -2,7 +2,7 @@ return {
   "jose-elias-alvarez/null-ls.nvim", -- configure formatters & linters
   event = { "BufReadPre", "BufNewFile" },
   keys = {
-    { "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>" }
+    { "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>" },
   },
   config = function()
     -- import null-ls plugin
@@ -11,7 +11,7 @@ return {
     local null_ls_utils = require("null-ls.utils")
 
     -- for conciseness
-    local formatting = null_ls.builtins.formatting   -- to setup formatters
+    local formatting = null_ls.builtins.formatting -- to setup formatters
     local diagnostics = null_ls.builtins.diagnostics -- to setup linters
 
     -- to setup format on save
@@ -24,6 +24,7 @@ return {
       -- setup formatters & linters
       sources = {
         formatting.stylua, -- lua formatter
+        formatting.clang_format.with({ extra_args = { "-style", "{IndentWidth: 4}" } }),
         formatting.gofumpt,
         formatting.goimports_reviser,
         formatting.golines,
