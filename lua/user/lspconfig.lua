@@ -48,12 +48,13 @@ function M.config()
   local lspconfig = require "lspconfig"
   local icons = require "user.icons"
 
-  local servers = {
-    "lua_ls",
-    "clangd",
-  }
+  -- May need to revert to this table if there is bug with get_installed_servers()
+  -- local servers = {
+  --   "lua_ls",
+  --   "clangd",
+  -- }
 
-  local servs = require("mason-lspconfig").get_installed_servers()
+  local servers = require("mason-lspconfig").get_installed_servers()
 
   local default_diagnostic_config = {
     signs = {
@@ -105,7 +106,6 @@ function M.config()
     end
 
     lspconfig[server].setup(opts)
-    print(vim.inspect(servs))
   end
 end
 
