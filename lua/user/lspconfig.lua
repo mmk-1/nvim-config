@@ -51,17 +51,9 @@ function M.config()
   local servers = {
     "lua_ls",
     "clangd",
-    -- "cssls",
-    -- "html",
-    -- "tsserver",
-    -- "astro",
-    -- "pyright",
-    -- "bashls",
-    -- "jsonls",
-    -- "yamlls",
-    -- "marksman",
-    -- "tailwindcss",
   }
+
+  local servs = require("mason-lspconfig").get_installed_servers()
 
   local default_diagnostic_config = {
     signs = {
@@ -113,6 +105,7 @@ function M.config()
     end
 
     lspconfig[server].setup(opts)
+    print(vim.inspect(servs))
   end
 end
 
