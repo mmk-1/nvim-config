@@ -9,7 +9,11 @@ function M.config()
 
   null_ls.setup {
     sources = {
-      formatting.clang_format,
+      formatting.stylua,
+      formatting.clang_format.with({ extra_args = { "-style", "{IndentWidth: 4}" } }),
+      formatting.gofumpt,
+      formatting.goimports_reviser,
+      formatting.golines,
     },
   }
 end
