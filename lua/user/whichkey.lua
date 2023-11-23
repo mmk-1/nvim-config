@@ -49,7 +49,7 @@ function M.config()
       c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
       f = { "<cmd>Telescope find_files<cr>", "Find files" },
       p = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
-      t = { "<cmd>Telescope live_grep<cr>", "Find Text" },
+      g = { "<cmd>Telescope live_grep<cr>", "Find Text" },
       s = { "<cmd>Telescope grep_string<cr>", "Find String" },
       h = { "<cmd>Telescope help_tags<cr>", "Help" },
       H = { "<cmd>Telescope highlights<cr>", "Highlights" },
