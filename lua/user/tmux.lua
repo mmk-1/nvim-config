@@ -2,6 +2,8 @@ local M = {
     "alexghergh/nvim-tmux-navigation",
 }
 
+-- Makes navigation between tmux panes seamless
+-- Also for neovim windows!
 M.keys = {
     { "<c-h>", "<cmd>NvimTmuxNavigateLeft<cr>" },
     { "<c-j>", "<cmd>NvimTmuxNavigateDown<cr>" },

@@ -12,6 +12,7 @@ M.servers = {
   "lua_ls",
   "clangd",
   "gopls",
+  "pyright",
 }
 
 M.null_ls_servers = {
