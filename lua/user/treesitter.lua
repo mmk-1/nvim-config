@@ -38,6 +38,8 @@ function M.config()
       "go",
       "c",
       "cpp",
+      "kdl",
+      "dockerfile",
     },
     ignore_install = { "" },
     sync_install = false,
