@@ -13,6 +13,8 @@ M.servers = {
   "clangd",
   "gopls",
   "pyright",
+  "rust_analyzer",
+  "hls"
 }
 
 M.null_ls_servers = {
@@ -21,6 +23,8 @@ M.null_ls_servers = {
   "goimports-reviser",
   "golines",
   "clang-format",
+  "prettier",
+  "rustfmt"
 }
 
 function M.config()

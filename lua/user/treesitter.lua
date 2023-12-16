@@ -40,6 +40,10 @@ function M.config()
       "cpp",
       "kdl",
       "dockerfile",
+      "haskell",
+      "rust",
+      "typescript",
+      "javascript"
     },
     ignore_install = { "" },
     sync_install = false,
